@@ -44,7 +44,17 @@ body {
   text-shadow: 0 0 10px rgba(255, 192, 203, 0.7);
   text-align: center;
 }
+  @media (max-width: 600px) {
+  .love-message {
+    font-size: 2em; 
+    top: 10%;
+  }
 
+  .love-message2 {
+    font-size: 1.5em; 
+    top: 20%; 
+  }
+}
 .night {
   position: relative;
   width: 100%;
