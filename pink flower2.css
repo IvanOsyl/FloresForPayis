@@ -35,14 +35,15 @@ body {
 
 .love-message2 {
   position: absolute;
-  top: 20%;
+  top: 25%; /* Ajusta esto si es necesario */
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3em;
-  color: pink;
+  font-size: 2em;
+  color: lightblue;
   z-index: 1000;
-  text-shadow: 0 0 10px rgba(255, 192, 203, 0.7);
+  text-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
   text-align: center;
+  margin-top: 10px; /* Ajusta este valor para el espaciado deseado */
 }
   @media (max-width: 600px) {
   .love-message {
