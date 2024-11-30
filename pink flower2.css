@@ -88,39 +88,65 @@ body {
 }
 .love-message {
   position: absolute;
-  top: 2%; /* Centrado vertical */
-  left: 10%; /* Puedes ajustar este valor para controlar qué tan pegado a la izquierda está */
-  transform: translateX(0); /* Elimina el translateX para evitar que se desplace hacia el centro */
-  font-size: 3em;
+  top: 2%; /* Centrado vertical, ajustable */
+  left: 10%; /* Pegado a la izquierda */
+  transform: translateX(0); /* Sin desplazamiento horizontal */
+  font-size: 3em; /* Tamaño de la fuente */
   color: pink;
   z-index: 1000;
   text-shadow: 0 0 10px rgba(255, 192, 203, 0.7);
   text-align: left; /* Alineación del texto a la izquierda */
 }
 
+/* Para pantallas más pequeñas */
+@media (max-width: 600px) {
+  .love-message {
+    font-size: 1.8em; /* Reducimos el tamaño de la fuente para pantallas pequeñas */
+    left: 5%; /* Ajustamos la posición para que no quede tan pegado a la izquierda */
+    top: 5%; /* Ajustamos un poco la posición para que no quede demasiado cerca de la parte superior */
+  }
+}
 .love-message2 {
   position: absolute;
   top: 10%; /* Ajusta esto si es necesario */
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 25px;
+  font-size: 25px; /* Tamaño de la fuente */
   color: lightblue;
   z-index: 1000;
   text-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
   text-align: center;
   margin-top: 10px; /* Ajusta este valor para el espaciado deseado */
 }
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  .love-message2 {
+    font-size: 18px; /* Reducimos el tamaño de la fuente en pantallas pequeñas */
+    top: 5%; /* Ajusta la posición si es necesario */
+    margin-top: 5px; /* Ajuste de margen para pantallas pequeñas */
+  }
+}
 .love-message3 {
   position: absolute;
   top: 10%; /* Ajusta esto si es necesario */
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 25px;
+  font-size: 25px; /* Tamaño de la fuente */
   color: lightblue;
   z-index: 1000;
   text-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
   text-align: center;
-  margin-top: 120px; /* Ajusta este valor para el espaciado deseado */
+  margin-top: 120px; /* Ajuste de margen */
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  .love-message3 {
+    font-size: 18px; /* Reducimos el tamaño de la fuente en pantallas pequeñas */
+    top: 5%; /* Ajusta la posición para que no quede demasiado abajo */
+    margin-top: 10px; /* Reducimos el margen superior para móviles */
+  }
 }
 
 .love-message4 {
@@ -128,86 +154,148 @@ body {
   top: 10%; /* Ajusta esto si es necesario */
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 25px;
+  font-size: 25px; /* Tamaño de la fuente */
   color: lightblue;
   z-index: 1000;
   text-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
   text-align: center;
-  margin-top: 240px; /* Ajusta este valor para el espaciado deseado */
+  margin-top: 240px; /* Ajuste del margen superior */
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  .love-message4 {
+    font-size: 18px; /* Reducimos el tamaño de la fuente en pantallas pequeñas */
+    top: 5%; /* Ajustamos la posición para que no quede demasiado abajo */
+    margin-top: 20px; /* Reducimos el margen superior para móviles */
+  }
 }
 .love-message5 {
   position: absolute;
   top: 10%; /* Ajusta esto si es necesario */
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 25px;
+  font-size: 25px; /* Tamaño de la fuente */
   color: lightblue;
   z-index: 1000;
   text-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
   text-align: center;
-  margin-top: 380px; /* Ajusta este valor para el espaciado deseado */
+  margin-top: 380px; /* Ajuste del margen superior */
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  .love-message5 {
+    font-size: 18px; /* Reducimos el tamaño de la fuente en pantallas pequeñas */
+    top: 5%; /* Ajustamos la posición para que no quede demasiado abajo */
+    margin-top: 30px; /* Reducimos el margen superior para móviles */
+  }
 }
 .love-message6 {
   position: absolute;
   top: 10%; /* Ajusta esto si es necesario */
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 25px;
+  font-size: 25px; /* Tamaño de la fuente */
   color: lightblue;
   z-index: 1000;
   text-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
   text-align: center;
-  margin-top: 510px; /* Ajusta este valor para el espaciado deseado */
+  margin-top: 510px; /* Ajuste del margen superior */
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  .love-message6 {
+    font-size: 18px; /* Reducimos el tamaño de la fuente en pantallas pequeñas */
+    top: 5%; /* Ajustamos la posición para que no quede demasiado abajo */
+    margin-top: 40px; /* Reducimos el margen superior para móviles */
+  }
 }
 .love-message7 {
   position: absolute;
   top: 6%; /* Ajusta esto si es necesario */
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 25px;
+  font-size: 25px; /* Tamaño de la fuente */
   color: lightblue;
   z-index: 1000;
   text-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
   text-align: center;
-  margin-top: 650px; /* Ajusta este valor para el espaciado deseado */
+  margin-top: 650px; /* Ajuste del margen superior */
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  .love-message7 {
+    font-size: 18px; /* Reducimos el tamaño de la fuente en pantallas pequeñas */
+    top: 5%; /* Ajustamos la posición para que no quede demasiado abajo */
+    margin-top: 50px; /* Reducimos el margen superior para móviles */
+  }
 }
 .love-message8 {
   position: absolute;
   top: 6%; /* Ajusta esto si es necesario */
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 25px;
+  font-size: 25px; /* Tamaño de la fuente */
   color: lightblue;
   z-index: 1000;
   text-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
   text-align: center;
-  margin-top: 740px; /* Ajusta este valor para el espaciado deseado */
+  margin-top: 740px; /* Ajuste del margen superior */
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  .love-message8 {
+    font-size: 18px; /* Reducimos el tamaño de la fuente en pantallas pequeñas */
+    top: 5%; /* Ajustamos la posición para que no quede demasiado abajo */
+    margin-top: 60px; /* Reducimos el margen superior para móviles */
+  }
 }
 .love-message9 {
   position: absolute;
   top: 10%; /* Ajusta esto si es necesario */
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 25px;
+  font-size: 25px; /* Tamaño de la fuente */
   color: lightblue;
   z-index: 1000;
   text-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
   text-align: center;
-  margin-top: 770px; /* Ajusta este valor para el espaciado deseado */
+  margin-top: 770px; /* Ajuste del margen superior */
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  .love-message9 {
+    font-size: 18px; /* Reducimos el tamaño de la fuente en pantallas pequeñas */
+    top: 5%; /* Ajustamos la posición para que no quede demasiado abajo */
+    margin-top: 70px; /* Reducimos el margen superior para móviles */
+  }
 }
 .love-message10 {
   position: absolute;
   top: 10%; /* Ajusta esto si es necesario */
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 25px;
+  font-size: 25px; /* Tamaño de la fuente */
   color: lightblue;
   z-index: 1000;
   text-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
   text-align: center;
-  margin-top: 800px; /* Ajusta este valor para el espaciado deseado */
+  margin-top: 800px; /* Ajuste del margen superior */
 }
 
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  .love-message10 {
+    font-size: 18px; /* Reducimos el tamaño de la fuente en pantallas pequeñas */
+    top: 5%; /* Ajustamos la posición para que no quede demasiado abajo */
+    margin-top: 80px; /* Reducimos el margen superior para móviles */
+  }
+}
 
 
   @media (max-width: 600px) {
