@@ -21,30 +21,195 @@ body {
   
 }
 
+#simple-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centra el texto horizontalmente */
+  width: 80%; /* Ajusta el ancho del contenido */
+  margin: 0 auto; /* Centra el contenedor en la página */
+  height: 100vh; /* Ocupa toda la pantalla */
+  font-size: 18px; /* Tamaño del texto */
+  line-height: 1.6; /* Altura de línea para mejor legibilidad */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#music-control {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(145deg, #ff6f61, #ff9471); /* Gradiente cálido */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3),
+              inset 0 -2px 4px rgba(255, 255, 255, 0.2); /* Sombras atractivas */
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#music-control:hover {
+  transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4),
+              inset 0 -2px 6px rgba(255, 255, 255, 0.4); /* Sombras más intensas */
+}
+
+#music-control:active {
+  transform: scale(0.95); /* Efecto de presión */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3),
+              inset 0 -2px 4px rgba(255, 255, 255, 0.3);
+}
+
+/* Opcional: animación navideña */
+@keyframes sparkle {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+                0 0 20px rgba(255, 0, 0, 0.5),
+                0 0 30px rgba(255, 255, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7),
+                0 0 25px rgba(255, 0, 0, 0.7),
+                0 0 35px rgba(255, 255, 0, 0.7);
+  }
+}
+
+#music-control:hover {
+  animation: sparkle 1s infinite;
+}
 .love-message {
   position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 2%; /* Centrado vertical */
+  left: 10%; /* Puedes ajustar este valor para controlar qué tan pegado a la izquierda está */
+  transform: translateX(0); /* Elimina el translateX para evitar que se desplace hacia el centro */
   font-size: 3em;
   color: pink;
-  z-index: 1000; 
+  z-index: 1000;
   text-shadow: 0 0 10px rgba(255, 192, 203, 0.7);
-  text-align: center;
+  text-align: left; /* Alineación del texto a la izquierda */
 }
 
 .love-message2 {
   position: absolute;
-  top: 25%; /* Ajusta esto si es necesario */
+  top: 10%; /* Ajusta esto si es necesario */
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 2em;
+  font-size: 25px;
   color: lightblue;
   z-index: 1000;
   text-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
   text-align: center;
   margin-top: 10px; /* Ajusta este valor para el espaciado deseado */
 }
+.love-message3 {
+  position: absolute;
+  top: 10%; /* Ajusta esto si es necesario */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: lightblue;
+  z-index: 1000;
+  text-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
+  text-align: center;
+  margin-top: 120px; /* Ajusta este valor para el espaciado deseado */
+}
+
+.love-message4 {
+  position: absolute;
+  top: 10%; /* Ajusta esto si es necesario */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: lightblue;
+  z-index: 1000;
+  text-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
+  text-align: center;
+  margin-top: 240px; /* Ajusta este valor para el espaciado deseado */
+}
+.love-message5 {
+  position: absolute;
+  top: 10%; /* Ajusta esto si es necesario */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: lightblue;
+  z-index: 1000;
+  text-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
+  text-align: center;
+  margin-top: 380px; /* Ajusta este valor para el espaciado deseado */
+}
+.love-message6 {
+  position: absolute;
+  top: 10%; /* Ajusta esto si es necesario */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: lightblue;
+  z-index: 1000;
+  text-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
+  text-align: center;
+  margin-top: 510px; /* Ajusta este valor para el espaciado deseado */
+}
+.love-message7 {
+  position: absolute;
+  top: 6%; /* Ajusta esto si es necesario */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: lightblue;
+  z-index: 1000;
+  text-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
+  text-align: center;
+  margin-top: 650px; /* Ajusta este valor para el espaciado deseado */
+}
+.love-message8 {
+  position: absolute;
+  top: 6%; /* Ajusta esto si es necesario */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: lightblue;
+  z-index: 1000;
+  text-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
+  text-align: center;
+  margin-top: 740px; /* Ajusta este valor para el espaciado deseado */
+}
+.love-message9 {
+  position: absolute;
+  top: 10%; /* Ajusta esto si es necesario */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: lightblue;
+  z-index: 1000;
+  text-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
+  text-align: center;
+  margin-top: 770px; /* Ajusta este valor para el espaciado deseado */
+}
+.love-message10 {
+  position: absolute;
+  top: 10%; /* Ajusta esto si es necesario */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: lightblue;
+  z-index: 1000;
+  text-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
+  text-align: center;
+  margin-top: 800px; /* Ajusta este valor para el espaciado deseado */
+}
+
+
+
   @media (max-width: 600px) {
   .love-message {
     font-size: 2em; 
